@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
-import SecondHeader from "./SecondHeader";
+// import SecondHeader from "./SecondHeader";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
     const { route } = useRouter()
@@ -10,7 +10,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     return (
         <>
             <NavBar />
-            { route === '/' ? '' : <SecondHeader route={route}/> }
+            {/* { route === '/' ? '' : <SecondHeader route={route}/> } */}
             {children}
             <Footer />
         </>
